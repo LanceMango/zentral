@@ -1,1 +1,5 @@
-textarea#id_body {font-family: Menlo,Monaco,Consolas,"Courier New",monospace}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
