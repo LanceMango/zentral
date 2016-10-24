@@ -1,0 +1,38 @@
+{
+  "name": "zentral",
+  "version": "1.0.0",
+  "description": "Read the Wiki for Zentral overview and documentation: <https://github.com/zentralopensource/zentral/wiki>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "babel-runtime": "^6.11.6",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-webpack": "^1.5.0",
+    "webpack": "^1.13.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LanceMango/zentral.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanceMango/zentral/issues"
+  },
+  "homepage": "https://github.com/LanceMango/zentral"
+}
