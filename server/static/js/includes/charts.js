@@ -1,7 +1,9 @@
-const charts = {
+var charts = {
 
-    init: () => {
-        console.log('charts init alter');
-    }
+  init(){
+    console.log('init function');
+  }
 
-}
+};
+
+export default charts;

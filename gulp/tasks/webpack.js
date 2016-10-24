@@ -5,7 +5,7 @@ module.exports = function (gulp, plugins, path) {
     return function () {
 
         return gulp.src(path.SRC_JS)
-           .pipe(webpack(webpackConfig))
-           .pipe(gulp.dest(path.DEST_JS))
+            .pipe(webpack(webpackConfig))
+            .pipe(gulp.dest(path.DEST_JS))
     };
 };
