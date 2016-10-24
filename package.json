@@ -1,0 +1,27 @@
+{
+  "name": "zentral",
+  "version": "1.0.0",
+  "description": "Read the Wiki for Zentral overview and documentation: <https://github.com/zentralopensource/zentral/wiki>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LanceMango/zentral.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanceMango/zentral/issues"
+  },
+  "homepage": "https://github.com/LanceMango/zentral"
+}
