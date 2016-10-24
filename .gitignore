@@ -11,3 +11,5 @@ __pycache__
 /fabfile.py
 /venv/
 /wheels/
+/.idea
+/node_modules
