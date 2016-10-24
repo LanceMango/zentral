@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
     <title>Zentral</title>
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'pygments/highlight_style.css' %}" rel="stylesheet">
+    <link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/pygments/highlight_style.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
   </head>
   <body>
@@ -52,9 +52,9 @@
       {% block content %}
       {% endblock %}
     </div>
-    <script src="{% static 'jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'Chart.js/Chart.min.js' %}"></script>
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'bower_components/chart.js/dist/Chart.min.js' %}"></script>
     <script src="{% static 'js/app.min.js' %}"></script>
     {% block extrajs %}
     {% endblock %}

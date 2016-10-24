@@ -1,0 +1,24 @@
+{
+  "name": "zentral",
+  "description": "Read the Wiki for Zentral overview and documentation: <https://github.com/zentralopensource/zentral/wiki>",
+  "authors": [
+    "Lance <lance@smuepop.de>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LanceMango/zentral",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "chart.js": "chartjs#^2.3.0",
+    "bootstrap": "^3.3.7"
+  }
+}

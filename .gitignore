@@ -13,3 +13,4 @@ __pycache__
 /wheels/
 /.idea
 /node_modules
+/server/static/bower_components
