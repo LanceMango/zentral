@@ -4,7 +4,11 @@ module.exports = {
     devtool: 'cheap-module-inline-source-map',
     module: {
         loaders: [
-            {enforce: "pre", test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/},
+            {
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "eslint-loader"
+            },
             {
                 test: /\.js$/,
                 loader: 'babel?presets[]=es2015'
@@ -16,5 +20,9 @@ module.exports = {
     },
     output: {
         filename: 'app.min.js',
+    },
+    eslint: {
+        failOnWarning: false,
+        failOnError: true
     },
 }
