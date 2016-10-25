@@ -26,7 +26,7 @@
 .navbar-header {
     display: block;
     float: none;
-    padding: 20px 10px;
+    padding: $content-padding-top 10px 20px;
 }
 
 .navbar-default {
@@ -36,5 +36,9 @@
     display: block;
     float: none;
     padding: 0;
+
+    a {
+        padding: 0;
+    }
 }
 
