@@ -1,0 +1,10 @@
+.content {
+    position: fixed;
+
+    width: 100vw - $navbar-width;
+    height: 100%;
+
+    top: 0;
+    left: $navbar-width;
+
+}

@@ -22,7 +22,7 @@ gulp.task('watch', function () {
 });
 
 //DEV Tasks
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'sass']);
 
 //BUILD
 gulp.task('build', ['webpack', 'sass']);

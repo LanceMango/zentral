@@ -1,2 +1,11 @@
+// Globals
 @import 'globals/globals';
+@import 'globals/colors';
+@import 'globals/units';
+
+// Syntax Highlighting
 @import 'plugins/pygments';
+
+// Modules
+@import 'modules/navbar';
+@import 'modules/content';
