@@ -5,8 +5,34 @@
 
     background-color: $navbar-bg;
     border: 0;
+
+    //UL
+    .navbar-nav {
+    }
+
+    //LI
+    .dropdown {
+        float: none;
+
+        a {
+            padding: 0;
+        }
+    }
+
+}
+
+.navbar-header {
+    display: block;
+    float: none;
+    padding: 20px 10px;
 }
 
 .navbar-default {
-
 }
+
+.navbar-brand{
+    display: block;
+    float: none;
+    padding: 0;
+}
+
