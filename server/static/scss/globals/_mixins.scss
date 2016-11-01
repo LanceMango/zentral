@@ -1,0 +1,185 @@
+/* Breakpoints */
+@mixin breakpoint($point) {
+    @if $point == xs {
+        @media #{$media-query--xs}       {
+            @content;
+        }
+    }
+    @if $point == s {
+        @media #{$media-query--s}        {
+            @content;
+        }
+    }
+    @if $point == m {
+        @media #{$media-query--m}        {
+            @content;
+        }
+    }
+    @if $point == l {
+        @media #{$media-query--l}        {
+            @content;
+        }
+    }
+    @if $point == xl {
+        @media #{$media-query--xl}       {
+            @content;
+        }
+    }
+    @if $point == sidebar {
+        @media #{$media-query--sidebar}  {
+            @content;
+        }
+    }
+
+    @if $point == xs-s {
+        @media #{$media-query--xs-s}     {
+            @content;
+        }
+    }
+    @if $point == xs-s-m {
+        @media #{$media-query--xs-s-m}   {
+            @content;
+        }
+    }
+    @if $point == s-m {
+        @media #{$media-query--s-m}      {
+            @content;
+        }
+    }
+    @if $point == s-m-l {
+        @media #{$media-query--s-m-l}    {
+            @content;
+        }
+    }
+    @if $point == s-m-l-xl {
+        @media #{$media-query--s-m-l-xl} {
+            @content;
+        }
+    }
+    @if $point == m-l {
+        @media #{$media-query--m-l}      {
+            @content;
+        }
+    }
+    @if $point == m-l-xl {
+        @media #{$media-query--m-l-xl}   {
+            @content;
+        }
+    }
+    @if $point == l-xl {
+        @media #{$media-query--l-xl}     {
+            @content;
+        }
+    }
+
+    @if $point == retina {
+        @media #{$media-query--retina}        {
+            @content;
+        }
+    }
+    @if $point == m-l-retina {
+        @media #{$media-query--m-l} and (-webkit-min-device-pixel-ratio: 1.25),
+        #{$media-query--m-l} and (min-resolution: 120dpi),
+        #{$media-query--m-l} and (-o-min-device-pixel-ratio: 5/4) {
+            @content;
+            background-size: 100% 100%;
+        }
+    }
+
+    @if $point == xl-retina {
+        @media #{$media-query--xl} and (-webkit-min-device-pixel-ratio: 1.25),
+        #{$media-query--xl} and (min-resolution: 120dpi),
+        #{$media-query--xl} and (-o-min-device-pixel-ratio: 5/4) {
+            @content;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+/* @end */
+
+// Style placeholder
+@mixin style-placeholder() {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin style-placeholder-focus() {
+    input:focus::-webkit-input-placeholder {
+        @content;
+    }
+
+    input:focus::-moz-placeholder {
+        @content;
+    }
+
+    input:focus:-moz-placeholder {
+        @content;
+    }
+
+    input:focus:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin thin-font() {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin transition($duration: .2s, $property: all, $effect: linear) {
+    -webkit-transition-property: $property;
+    -webkit-transition-duration: $duration;
+    -webkit-transition-timing-function: $effect;
+
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $effect;
+}
+
+@mixin rotateThis($amount: 0deg) {
+    -ms-transform: rotate($amount);
+    -webkit-transform: rotate($amount);
+    transform: rotate($amount);
+}
+
+// Reset <input>
+@mixin reset-input-tag() {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+// Reset <select>
+@mixin reset-select-tag() {
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+
+    &:invalid {
+        box-shadow: none;
+
+    }
+}
+

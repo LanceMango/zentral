@@ -1,0 +1,20 @@
+/*
+  Grid
+*/
+$media-query--xs: '(max-width: 479px)';
+$media-query--s: '(min-width: 480px) and (max-width: 767px)';
+$media-query--m: '(min-width: 768px) and (max-width: 1023px)';
+$media-query--l: '(min-width: 1024px) and (max-width: 1279px)';
+$media-query--xl: '(min-width: 1280px)';
+
+$media-query--xs-s: '(max-width: 767px)';
+$media-query--xs-s-m: '(max-width: 1023px)';
+$media-query--s-m: '(min-width: 480px) and (max-width: 1023px)';
+$media-query--s-m-l: '(min-width: 480px) and (max-width: 1279px)';
+$media-query--s-m-l-xl: '(min-width: 480px)';
+$media-query--m-l: '(min-width: 768px) and (max-width: 1279px)';
+$media-query--m-l-xl: '(min-width: 768px)';
+$media-query--l-xl: '(min-width: 1024px)';
+
+$media-query--sidebar: '(min-width: 1780px)';
+$media-query--retina: '(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (-o-min-device-pixel-ratio: 5/4)';

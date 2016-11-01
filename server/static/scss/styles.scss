@@ -1,7 +1,9 @@
 // Globals
 @import 'globals/globals';
+@import 'globals/vars';
 @import 'globals/colors';
 @import 'globals/units';
+@import 'globals/mixins';
 
 // Layout
 @import 'layout/row';
@@ -9,8 +11,7 @@
 // Syntax Highlighting
 @import 'plugins/pygments';
 
-
-
 // Modules
 @import 'modules/navbar';
 @import 'modules/content';
+
