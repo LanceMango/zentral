@@ -15,5 +15,5 @@ module.exports = {
 
 
     /* WATCH */
-    WATCH: ['src/js/*.js', 'src/js/**/*.js', 'src/scss/*.scss', 'src/scss/**/*.scss', 'views/**/*.twig'],
+    WATCH: ['./server/static/js/**/*.js','./server/static/scss/**/*.scss', ],
 };

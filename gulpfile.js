@@ -16,13 +16,13 @@ gulp.task('webpack', getTask('webpack'));
 //SASS
 gulp.task('sass', getTask('sass'));
 
+//Default
+gulp.task('default', ['watch']);
+
 //Watch
 gulp.task('watch', function () {
     gulp.watch(path.WATCH, ['webpack', 'sass']);
 });
-
-//DEV Tasks
-gulp.task('default', ['watch', 'sass']);
 
 //BUILD
 gulp.task('build', ['webpack', 'sass']);
