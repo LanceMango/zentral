@@ -1,13 +1,15 @@
-.row {
+@include breakpoint(m-l-xl) {
+    .row {
 
-    ul {
-        margin: 0;
-        padding: 0;
+        ul {
+            margin: 0;
+            padding: 0;
 
-        li {
-            display: block;
-            list-style: none;
+            li {
+                display: block;
+                list-style: none;
+            }
+
         }
-
     }
 }

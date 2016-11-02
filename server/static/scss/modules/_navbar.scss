@@ -1,44 +1,61 @@
-.navbar {
-    position: fixed;
-    width: $navbar-width;
-    height: 100%;
+@include breakpoint(m-l-xl) {
+    .navbar {
+        position: fixed;
+        width: $navbar-width;
+        height: 100%;
 
-    background-color: $navbar-bg;
-    border: 0;
+        background-color: $navbar-bg;
+        border: 0;
 
-    //UL
-    .navbar-nav {
+        //UL
+        .navbar-nav {
+            float: none;
+        }
+
+        //LI
+        .dropdown {
+            float: none;
+            margin: 25px 0;
+            padding: 0 0 0 15px;
+
+            a {
+                padding: 0;
+                background-color: transparent !important;
+            }
+
+            &.open {
+                a {
+                    &:hover {
+                    }
+                }
+            }
+
+            &.active {
+                a {
+                    color: $zentral-green;
+                }
+            }
+        }
     }
 
-    //LI
-    .dropdown {
+    .navbar-header {
+        display: block;
         float: none;
-        margin: 25px 0;
-        padding: 0 0 0 15px;
+        padding: $content-padding-top 10px 20px;
+    }
+
+    .navbar-default {
+    }
+
+    .navbar-brand {
+        display: block;
+        float: none;
+        padding: 0;
 
         a {
             padding: 0;
         }
     }
 
-}
-
-.navbar-header {
-    display: block;
-    float: none;
-    padding: $content-padding-top 10px 20px;
-}
-
-.navbar-default {
-}
-
-.navbar-brand{
-    display: block;
-    float: none;
-    padding: 0;
-
-    a {
-        padding: 0;
-    }
 }
 
