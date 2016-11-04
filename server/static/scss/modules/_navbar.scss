@@ -31,6 +31,8 @@
                 margin: 0 0 25px;
                 padding: 0 0 0 15px;
 
+
+
                 a {
                     padding: 0;
                     background-color: transparent !important;
@@ -43,9 +45,14 @@
                 &.open {
                     height: auto;
 
+
                     a {
                         &:hover {
                         }
+                    }
+
+                    .dropdown-menu {
+                        opacity: 1;
                     }
                 }
 
@@ -56,6 +63,8 @@
                 }
 
                 .dropdown-menu {
+                    @include transition(.3s);
+
                     display: block;
                     position: relative;
 
@@ -71,10 +80,12 @@
 
                     background: none;
 
+                    opacity: 0;
+
                     li {
                         a {
                             font-size: 13px;
-                            line-height: 25px;
+                            line-height: 35px;
                             color: $navbar-font;
                         }
                     }
