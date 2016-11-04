@@ -1,10 +1,11 @@
 @include breakpoint(m-l-xl) {
     .content {
-        position: relative;
+        position: absolute;
 
-        top: 0;
+        top: $topbar-height;
         left: $navbar-width;
-        padding: $content-padding-top+6px 0 0 35px;
+
+        padding: 30px 0 0 35px;
 
         //font
         h3 {
