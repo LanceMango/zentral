@@ -8,66 +8,69 @@
 
         //UL
         .navbar-nav {
-            //float: none;
-        }
+            
+            //LI
+            .dropdown {
+                @include transition(0.3s);
 
-        //LI
-        .dropdown {
-            @include transition(0.3s);
-
-            display: block;
-            position: relative;
-            float: none;
-
-            width: 100%;
-            height: 20px;
-
-            overflow: hidden;
-
-            margin: 0 0 25px;
-            padding: 0 0 0 15px;
-
-            a {
-                padding: 0;
-                background-color: transparent !important;
-            }
-
-            &.open {
-                height: auto;
-
-                a {
-                    &:hover {
-                    }
-                }
-            }
-
-            &.active {
-                a {
-                    color: $zentral-green;
-                }
-            }
-
-            .dropdown-menu {
                 display: block;
                 position: relative;
+                float: none;
 
                 width: 100%;
+                height: 20px;
 
-                margin: 15px 0 0;
+                overflow: hidden;
 
-                padding: 0 0 10px 15px;
+                margin: 0 0 25px;
+                padding: 0 0 0 15px;
 
-                border: none;
-                border-radius: 0;
-                box-shadow: none;
+                a {
+                    padding: 0;
+                    background-color: transparent !important;
 
-                background: none;
+                    .caret {
+                        margin-left: 5px;
+                    }
+                }
 
-                li {
+                &.open {
+                    height: auto;
+
                     a {
-                        font-size: 13px;
-                        line-height: 25px;
-                        color: $navbar-font;
+                        &:hover {
+                        }
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: $zentral-green;
+                    }
+                }
+
+                .dropdown-menu {
+                    display: block;
+                    position: relative;
+
+                    width: 100%;
+
+                    margin: 15px 0 0;
+
+                    padding: 0 0 10px 15px;
+
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+
+                    background: none;
+
+                    li {
+                        a {
+                            font-size: 13px;
+                            line-height: 25px;
+                            color: $navbar-font;
+                        }
                     }
                 }
             }
