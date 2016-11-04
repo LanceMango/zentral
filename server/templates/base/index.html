@@ -11,20 +11,13 @@
     <div class="row">
         <ul>
             <li>
-                <div class="col-md-11">
-                    <canvas class="chart"
-                            data-app="{{ app }}"
-                            data-dataset="event_count"
-                            width="100"
-                            height="80"></canvas>
-                </div>
-                <div class="col-md-11">
-                    <canvas class="chart"
-                            data-app="{{ app }}"
-                            data-dataset="unique_msn"
-                            width="100"
-                            height="80"></canvas>
-                </div>
+                <canvas class="chart"
+                        data-app="{{ app }}"
+                        data-dataset="event_count"></canvas>
+
+                <canvas class="chart"
+                        data-app="{{ app }}"
+                        data-dataset="unique_msn"></canvas>
             </li>
 
         </ul>
