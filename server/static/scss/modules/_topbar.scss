@@ -23,4 +23,13 @@
     top: $topbar-height;
 
     padding-left: 220px;
+
+    h3 {
+        position: absolute;
+
+        top: 15px;
+
+        font-size: 16px;
+        text-transform: uppercase;
+    }
 }
