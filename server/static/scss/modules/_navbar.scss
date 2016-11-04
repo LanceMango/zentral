@@ -1,7 +1,6 @@
 @include breakpoint(m-l-xl) {
     .navbar {
         position: fixed;
-        width: $navbar-width;
         height: 100%;
 
         background-color: $navbar-bg;
@@ -9,7 +8,7 @@
 
         //UL
         .navbar-nav {
-            float: none;
+            //float: none;
         }
 
         //LI
@@ -64,7 +63,7 @@
 
                 background: none;
 
-                li {  
+                li {
                     a {
                         font-size: 13px;
                         line-height: 25px;
@@ -78,7 +77,7 @@
     .navbar-header {
         display: block;
         float: none;
-        padding: $content-padding-top 10px 20px;
+        padding: $content-padding-top 10px 20px 20px;
     }
 
     .navbar-default {
