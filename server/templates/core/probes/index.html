@@ -3,13 +3,13 @@
 
 {% block content %}
 <ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
-  <li class="active">Probes</li>
+    <li><a href="/">Home</a></li>
+    <li class="active">Probes</li>
 </ol>
 
 <h2>{{ object_list|length }} Probe{{ object_list|length|pluralize }}</h2>
 <p>
-  <a href="{% url 'probes:create' %}" class="btn btn-default">Create</a>
+    <a href="{% url 'probes:create' %}" class="btn btn-default">Create</a>
 </p>
 
 {% probe_list object_list %}
