@@ -6,21 +6,20 @@
 {% for app in apps %}
 <div class="row">
     <h4>{{ app|title }}</h4>
-    <div class="row">
-        <ul>
-            <li>
-                <canvas class="chart"
-                        data-app="{{ app }}"
-                        data-dataset="event_count">
-                </canvas>
-
-                <canvas class="chart"
-                        data-app="{{ app }}"
-                        data-dataset="unique_msn">
-                </canvas>
-            </li>
-        </ul>
-    </div>
+    <ul>
+        <li>
+            <canvas class="chart"
+                    data-app="{{ app }}"
+                    data-dataset="event_count">
+            </canvas>
+        </li>
+        <li>
+            <canvas class="chart"
+                    data-app="{{ app }}"
+                    data-dataset="unique_msn">
+            </canvas>
+        </li>
+    </ul>
 </div>
 {% endfor %}
 
