@@ -1,26 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h3>{{ apps|length }} Configured app{{ apps|pluralize }}</h3>
 
-{% for app in apps %}
-<div class="row">
-    <h4>{{ app|title }}</h4>
-    <ul>
-        <li>
-            <canvas class="chart"
-                    data-app="{{ app }}"
-                    data-dataset="event_count">
-            </canvas>
-        </li>
-        <li>
-            <canvas class="chart"
-                    data-app="{{ app }}"
-                    data-dataset="unique_msn">
-            </canvas>
-        </li>
-    </ul>
-</div>
-{% endfor %}
+    {% for app in apps %}
+    <div class="row">
+        <h4>{{ app|title }}</h4>
+        <ul>
+            <li>
+                <canvas class="chart"
+                        data-app="{{ app }}"
+                        data-dataset="event_count">
+                </canvas>
+            </li>
+            <li>
+                <canvas class="chart"
+                        data-app="{{ app }}"
+                        data-dataset="unique_msn">
+                </canvas>
+            </li>
+        </ul>
+    </div>
+    {% endfor %}
 
 {% endblock %}
