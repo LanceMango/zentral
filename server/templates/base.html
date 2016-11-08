@@ -30,53 +30,55 @@
 </div>
 
 <!-- NAVI -->
-<header class="navbar navbar-default" role="banner">
+<div class="navbar-warpper">
+    <nav class="navbar navbar-default" role="banner">
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
 
-        <!-- Burger -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+            <!-- Burger -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-        <!-- Logo -->
-        <div class="navbar-logo">
-            <a href="{% url 'base:index' %}">
-                <img src="{% static 'img/logox1.png' %}"
-                     srcset="{% static 'img/logox1.png' %} 1x, {% static 'img/logox2.png' %} 2x"
-                     alt="Zentral">
-            </a>
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="{% url 'base:index' %}">
+                    <img src="{% static 'img/logox1.png' %}"
+                         srcset="{% static 'img/logox1.png' %} 1x, {% static 'img/logox2.png' %} 2x"
+                         alt="Zentral">
+                </a>
+            </div>
+
         </div>
 
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+                <!-- Main Nav-->
+                {% main_menu_app_dropdowns %}
 
-            <!-- Main Nav-->
-            {% main_menu_app_dropdowns %}
-
-            <!-- Extra Links -->
-            {% if zentral_extra_links %}
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Extra links <span
-                    class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    {% for link in zentral_extra_links %}
-                    <li><a href="{{ link.url }}" target="blank">{{ link.anchor_text }}</a></li>
-                    {% endfor %}
-                </ul>
-            </li>
-            {% endif %}
-        </ul>
-    </div>
-</header>
+                <!-- Extra Links -->
+                {% if zentral_extra_links %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Extra links <span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% for link in zentral_extra_links %}
+                        <li><a href="{{ link.url }}" target="blank">{{ link.anchor_text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>
 
 <!-- CONTENT -->
 <div class="content">
