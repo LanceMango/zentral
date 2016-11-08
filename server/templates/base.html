@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
 
     <!-- Titel -->
     <title>Zentral</title>
@@ -34,19 +34,25 @@
 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
+
+        <!-- Burger -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
-
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{% url 'base:index' %}">
-            <img src="{% static 'logox1.png' %}"
-                 srcset="{% static 'logox1.png' %} 1x, {% static 'logox2.png' %} 2x"
-                 alt="Zentral">
-        </a>
+
+        <!-- Logo -->
+        <div class="navbar-logo">
+            <a href="{% url 'base:index' %}">
+                <img src="{% static 'img/logox1.png' %}"
+                     srcset="{% static 'img/logox1.png' %} 1x, {% static 'img/logox2.png' %} 2x"
+                     alt="Zentral">
+            </a>
+        </div>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

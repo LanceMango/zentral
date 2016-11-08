@@ -4,7 +4,7 @@ let charts = {
         let charts = {};
         let urls = Array();
 
-        $(".chart").each(function (index, canvas) {
+        $('.chart').each(function (index, canvas) {
             canvas = $(canvas);
             let app = canvas.data('app');
             let dataset = canvas.data('dataset');
