@@ -9,13 +9,31 @@
         tr {
 
             &:nth-of-type(even) {
-                background: red;
+                background: #f4f3f3;
             }
 
             &:nth-of-type(odd) {
-                background: green;
+                background: $zentral-white;
             }
 
+        }
+
+        td {
+
+            line-height: 3em !important;
+
+            i {
+                margin: 0 10px 0 0;
+            }
+
+            a {
+                color: $zentral-black;
+
+                &:hover {
+                    color: $zentral-green;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
