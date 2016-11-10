@@ -1,0 +1,265 @@
+/* inspired by Boilerplate, Normalize.css and own thinking :-) */
+
+/* @group BASE */
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// html,
+// body {
+//     width: 100%;
+//     height: 100%;
+// }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: block;
+}
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Force vertical scrollbar in non-IE
+ */
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-overflow-scrolling: touch; /* 3 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 3 */
+}
+
+body {
+    //overflow-y: scroll; /* 4 */
+}
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ */
+img {
+    border: 0; /* 1 */
+}
+
+/*
+ * Remove most spacing between table cells
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+}
+
+th,
+td {
+    vertical-align: top;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/*
+ * default list and hr styling
+ */
+nav ul,
+nav ol,
+form ul,
+form ol {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+nav a,
+nav span {
+    display: block;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0 none;
+    border-top: 1px solid #ccc;
+}
+
+/* @end */
+
+/* @group Typography */
+
+i,
+address {
+    font-style: normal;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+    font-size: 80%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -2px;
+    left: 1px;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* @end */
+
+/* @group Forms */
+
+fieldset {
+    border: 0 none;
+}
+
+/*
+ * Indicate that 'label' will shift focus to the associated form element
+ */
+
+label[for],
+label.nice-checkbox,
+label.nice-radio {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    outline: 0 none;
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    vertical-align: baseline; /* 2 */
+    *vertical-align: middle; /* 2 */
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: none; /* 2 */
+
+    &[disabled] {
+        cursor: not-allowed;
+        opacity: 1; // iOS
+    }
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    // edit by Martin Wolf
+    // -moz-box-sizing: content-box;
+    // -webkit-box-sizing: content-box; /* 2 */
+    // box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"] {
+    border-radius: 0;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* @end */

@@ -1,0 +1,47 @@
+@include breakpoint(m-l-xl) {
+
+    .form-inline {
+
+        > div {
+            margin: 0 0 20px;
+        }
+    }
+
+    .form-group {
+
+        .form-control,
+        label {
+            display: block;
+
+            margin: 0 5px 0 0;
+
+            font-weight: normal;
+            font-size: 13px;
+
+            outline: none;
+        }
+
+    }
+
+    //Buttons
+    .btn {
+        vertical-align: bottom;
+    }
+
+    //Inputs
+    input[type="text"] {
+        box-shadow: none;
+
+    }
+
+    //Select Field
+    .form-control {
+        box-shadow: none;
+    }
+
+    select {
+        border-radius: 0;
+        outline: none;
+    }
+
+}

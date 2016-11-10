@@ -3,11 +3,12 @@
         position: absolute;
 
         width: 100%;
+        min-height: 100vh;
 
         top: $topbar-height + $topbar2-height;
         left: $navbar-width;
 
-        padding: 30px 235px 0 35px;
+        padding: 30px 235px 0 20px;
 
         background-color: $content-bg;
 

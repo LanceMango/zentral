@@ -1,4 +1,5 @@
 // Globals
+@import 'globals/reset';
 @import 'globals/globals';
 @import 'globals/vars';
 @import 'globals/colors';
@@ -7,6 +8,8 @@
 
 // Layout
 @import 'layout/row';
+@import 'layout/form';
+@import 'layout/table';
 
 // Syntax Highlighting
 @import 'plugins/pygments';
